@@ -13,4 +13,5 @@ services:
       - $PORT:80
     restart: unless-stopped
     volumes:
+      - ./app:/app
       - ./config:/config
