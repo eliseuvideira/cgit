@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  alpine-cgit:
+    image: chruth/alpine-cgit
+    env_file:
+      - .env
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+    ports:
+      - $PORT:80
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
