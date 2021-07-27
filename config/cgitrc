@@ -38,13 +38,13 @@ root-title=Git repository browser
 root-desc=a fast webinterface for the git dscm
 
 # Add a cgit favicon
-favicon=/assets/favicon.svg
+favicon=/public/favicon.svg
 
 # Use a custom logo
 logo=/cgit.png
 
 # Specify the css url
-css=/assets/styles.css
+css=/public/styles.css
 
 # if you do not want that webcrawler (like google) index your site
 robots=noindex, nofollow
@@ -121,4 +121,4 @@ repo.path=/config/repositories/alpine-base.git
 repo.desc=Alpine Linux image
 repo.owner=chruth
 
-head-include=/app/assets/head-include.html
+head-include=/assets/includes/head-include.html
