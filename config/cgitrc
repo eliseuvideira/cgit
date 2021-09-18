@@ -1,8 +1,8 @@
 # Show owner on index page
-enable-index-owner=1
+enable-index-owner=0
 
 # Allow http transport git clone
-enable-http-clone=1
+enable-http-clone=0
 
 # Show extra links for each repository on the index page
 enable-index-links=1
@@ -32,22 +32,22 @@ snapshots=tar.gz tar.bz2 zip
 max-stats=quarter
 
 # Set the title and heading of the repository index page
-root-title=Git repository browser
+root-title=ev1.pw repositories
 
 # Set a subheading for the repository index page
-root-desc=a fast webinterface for the git dscm
+root-desc=List of ev1.pw repositories
 
 # Add a cgit favicon
-favicon=/public/favicon.svg
+favicon=/public/git.ico
 
 # Use a custom logo
-logo=/cgit.png
+logo=/public/git.png
 
 # Specify the css url
-css=/public/styles.css
+# css=/public/styles.css
 
 # if you do not want that webcrawler (like google) index your site
-robots=noindex, nofollow
+robots=index, nofollow
 
 # if cgit messes up links, use a virtual-root.4
 virtual-root=/
@@ -112,13 +112,13 @@ readme=:install
 ##
 
 repo.url=alpine-cgit
-repo.path=/config/repositories/alpine-cgit.git
+repo.section=development
+repo.path=/config/repositories/development/alpine-cgit.git
 repo.desc=Alpine Linux base with CGIT and NGINX
-repo.owner=chruth
 
 repo.url=alpine-base
-repo.path=/config/repositories/alpine-base.git
+repo.section=development
+repo.path=/config/repositories/development/alpine-base.git
 repo.desc=Alpine Linux image
-repo.owner=chruth
 
-head-include=/assets/includes/head-include.html
+footer=/assets/footer.html
