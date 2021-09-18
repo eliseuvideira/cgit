@@ -43,9 +43,6 @@ favicon=/public/git.ico
 # Use a custom logo
 logo=/public/git.png
 
-# Specify the css url
-# css=/public/styles.css
-
 # if you do not want that webcrawler (like google) index your site
 robots=index, nofollow
 
